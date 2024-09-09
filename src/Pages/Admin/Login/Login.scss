@@ -1,0 +1,97 @@
+$purple: #63049b;
+
+.admin-login {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+
+  .red-blob {
+    position: absolute;
+    z-index: -99;
+    right: 10px;
+    top: 100px;
+    width: 564px;
+    height: 564px;
+    border-radius: 564px;
+    background: linear-gradient(
+      318deg,
+      #6f113e 13.43%,
+      rgba(111, 17, 62, 0) 93.61%
+    );
+
+    filter: blur(125px);
+  }
+
+  .blue-blob {
+    position: absolute;
+    z-index: -1;
+    left: 10px;
+    top: 100px;
+    width: 564px;
+    height: 564px;
+    border-radius: 564px;
+    background: linear-gradient(
+      318deg,
+      #09173d 13.43%,
+      rgba(9, 23, 61, 0) 93.61%
+    );
+    filter: blur(125px);
+  }
+
+  h1 {
+    font-family: Orbitron;
+    letter-spacing: 2px;
+    font-size: 32px;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    input {
+      display: block;
+      width: 409px;
+      padding: 18px 12px;
+      font-size: 18px;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 20px 56px;
+      border-radius: 12px;
+      background-color: $purple;
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  .admin-login {
+    gap: 20px;
+
+    h1 {
+      font-size: 30px;
+    }
+    form {
+      gap: 16px;
+      input {
+        width: 380px;
+        padding: 17px 11px;
+        font-size: 16px;
+      }
+
+      button {
+        padding: 15px 45px;
+        border-radius: 11px;
+
+        font-size: 18px;
+      }
+    }
+  }
+}

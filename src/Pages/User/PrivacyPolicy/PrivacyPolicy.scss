@@ -1,0 +1,286 @@
+$purple: #63049b;
+
+.privacy-policy {
+  margin: 100px 300px;
+  margin-top: 200px;
+  position: relative;
+
+  h1 {
+    font-family: Orbitron;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+  }
+
+  .red-blob {
+    position: absolute;
+    z-index: -99;
+    right: -200px;
+    bottom: 20px;
+    width: 421px;
+    height: 421px;
+    border-radius: 421px;
+    background: linear-gradient(
+      318deg,
+      #6f113e 13.43%,
+      rgba(111, 17, 62, 0) 93.61%
+    );
+
+    filter: blur(125px);
+  }
+
+  .blue-blob {
+    position: absolute;
+    z-index: -1;
+    left: -300px;
+    top: -200px;
+    width: 564px;
+    height: 564px;
+    border-radius: 564px;
+    background: linear-gradient(
+      318deg,
+      #09173d 13.43%,
+      rgba(9, 23, 61, 0) 93.61%
+    );
+    filter: blur(125px);
+  }
+
+  ul {
+    li {
+      font-size: 24px;
+      font-family: "DM Sans", sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 30px;
+    }
+
+    li::marker {
+      color: $purple;
+    }
+
+    .special-list {
+      ol {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0px;
+        flex-direction: column;
+        margin-left: 40px;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  .privacy-policy {
+    margin: 80px 200px;
+    margin-top: 150px;
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 45px;
+    }
+
+    ul {
+      li {
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+
+      .special-list {
+        ol {
+          margin-left: 35px;
+          margin-top: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .privacy-policy {
+    margin: 70px 180px;
+    margin-top: 140px;
+
+    .red-blob {
+      right: -100px;
+      bottom: 20px;
+      width: 321px;
+      height: 321px;
+      border-radius: 321px;
+    }
+
+    .blue-blob {
+      left: -100px;
+      top: 100px;
+      width: 464px;
+      height: 464px;
+      border-radius: 464px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 45px;
+    }
+
+    ul {
+      li {
+        font-size: 18px;
+        margin-bottom: 18px;
+        line-height: 32px;
+      }
+
+      .special-list {
+        ol {
+          margin-left: 32px;
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 1281px) {
+  .privacy-policy {
+    h1 {
+      font-size: 25px;
+      margin-bottom: 36px;
+    }
+
+   ul{
+    li {
+      font-size: 17px;
+      margin-bottom: 17px;
+    }
+   }
+
+   
+  }
+}
+
+@media (max-width: 1000px) {
+  .privacy-policy {
+    margin: 7vh 80px;
+    margin-top: 12vh;
+
+    .red-blob {
+      right: 0;
+    }
+
+    .blue-blob {
+      left: 0;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+
+    ul{
+      li {
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+      .special-list {
+        ol {
+          margin-left: 28px;
+          margin-top: 28px;
+        }
+      }
+    }
+
+  
+  }
+}
+
+@media (max-width: 780px) {
+  .privacy-policy {
+    margin: 7vh 50px;
+    margin-top: 12vh;
+    h1 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    ul{
+      li {
+        font-size: 14px;
+        margin-bottom: 15px;
+        line-height: 25px;
+      }
+    }
+
+
+  }
+}
+
+@media (max-width: 600px) {
+  .privacy-policy {
+    margin: 7vh 30px;
+    margin-top: 12vh;
+    h1 {
+      font-size: 22px;
+      margin-bottom: 28px;
+    }
+
+   ul{
+    li {
+      font-size: 13px;
+      margin-bottom: 14px;
+      line-height: 23px;
+    }
+    .special-list {
+      ol {
+        margin-left: 25px;
+        margin-top: 25px;
+        li{
+          margin-bottom: 10px;
+        }
+      }
+    }
+   }
+
+ 
+  }
+}
+
+@media (max-width: 500px) {
+  .privacy-policy {
+    margin: 7vh 30px;
+    margin-top: 12vh;
+
+    .red-blob {
+      right: 0;
+      height: 300px;
+      width: 200px;
+    }
+
+    .blue-blob {
+      left: 0;
+      height: 300px;
+      width: 200px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 28px;
+    }
+
+ul{
+  li {
+    font-size: 13px;
+    margin-bottom: 14px;
+    line-height: 23px;
+  }
+  .special-list {
+    ol {
+      margin-left: 22px;
+      margin-top: 22px;
+    }
+  }
+}
+
+  
+  }
+}

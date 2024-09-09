@@ -1,0 +1,357 @@
+$purple: #63049b;
+
+.hero {
+  height: 100vh;
+  padding: 0 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+
+  .gradient {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    z-index: -1;
+    width: 623px;
+    height: 623px;
+    border-radius: 623px;
+    background: linear-gradient(
+      318deg,
+      #6f113e 13.43%,
+      rgba(111, 17, 62, 0) 93.61%
+    );
+    filter: blur(125px);
+  }
+
+  img {
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    z-index: -1;
+  }
+  .content {
+    p {
+      font-size: 40px;
+      font-family: "Corinthia", cursive;
+    }
+    h1 {
+      font-size: 60px;
+      font-family: "Orbitron", sans-serif;
+      letter-spacing: 1px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    .button1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $purple;
+      color: white;
+      width: 203px;
+
+      padding: 20px 50px;
+      border-radius: 12px;
+      font-size: 20px;
+    }
+
+    .button2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      color: $purple;
+      width: 203px;
+
+      padding: 18px 40px;
+      border-radius: 12px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .hero {
+    padding: 0 200px;
+    gap: 40px;
+
+    .gradient {
+      top: 120px;
+      left: 80px;
+      width: 523px;
+      height: 523px;
+      border-radius: 523px;
+    }
+
+    img {
+      width: 800px;
+      right: 5%;
+    }
+    .content {
+      p {
+        font-size: 35px;
+      }
+      h1 {
+        font-size: 45px;
+      }
+    }
+
+    .buttons {
+      gap: 18px;
+      .button1 {
+        width: 190px;
+        padding: 18px 45px;
+        border-radius: 11px;
+        font-size: 18px;
+      }
+
+      .button2 {
+        width: 190px;
+        padding: 18px 40px;
+        border-radius: 11px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .hero {
+    padding: 0 150px;
+    gap: 40px;
+
+    .gradient {
+      top: 200px;
+      left: 80px;
+      width: 450px;
+      height: 450px;
+      border-radius: 450px;
+    }
+
+    img {
+      width: 780px;
+    }
+    .content {
+      p {
+        font-size: 32px;
+      }
+      h1 {
+        font-size: 42px;
+      }
+    }
+
+    .buttons {
+      gap: 16px;
+      .button1 {
+        width: 170px;
+        padding: 17px 42px;
+        font-size: 16px;
+      }
+
+      .button2 {
+        width: 170px;
+        padding: 17px 30px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .hero {
+    img {
+      width: 700px;
+      top: 30%;
+      right: 1%;
+    }
+    .content {
+      p {
+        font-size: 31px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+    .buttons {
+      gap: 16px;
+      .button1 {
+        width: 160px;
+        padding: 16px 40px;
+        font-size: 16px;
+      }
+
+      .button2 {
+        width: 160px;
+        padding: 16px 30px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .hero {
+    height: auto;
+    padding: 100px 50px;
+    padding-top: 400px;
+    align-items: center;
+    gap: 50px;
+
+    .gradient {
+      top: 25%;
+      left: 40px;
+      width: 323px;
+      height: 323px;
+      border-radius: 323px;
+    }
+
+    img {
+      width: 500px;
+      top: 20%;
+      right: 25%;
+    }
+    .content {
+      text-align: center;
+      p {
+        font-size: 20px;
+      }
+      h1 {
+        font-size: 35px;
+      }
+    }
+
+    .buttons {
+      gap: 16px;
+      .button1 {
+        font-size: 16px;
+      }
+
+      .button2 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .hero {
+    padding-top: 300px;
+    height: 90vh;
+
+    .gradient {
+      top: 25%;
+      left: 20px;
+      width: 250px;
+      height: 250px;
+      border-radius: 250px;
+    }
+
+    img {
+      width: 400px;
+      right: 25%;
+    }
+    .content {
+      text-align: center;
+      p {
+        font-size: 18px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+    }
+
+    .buttons {
+      gap: 16px;
+      .button1 {
+        width: 150px;
+        padding: 16px 20px;
+        font-size: 15px;
+      }
+
+      .button2 {
+        width: 150px;
+        padding: 16px 20px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .hero {
+    padding: 10px 10px;
+    padding-top: 250px;
+    gap: 30px;
+
+    .gradient {
+      top: 25%;
+      left: 0px;
+      width: 250px;
+      height: 250px;
+      border-radius: 250px;
+    }
+
+    img {
+      width: 320px;
+      top: 30%;
+      right: 25%;
+    }
+    .content {
+      text-align: center;
+      p {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      h1 {
+        font-size: 21px;
+      }
+    }
+
+    .buttons {
+      gap: 16px;
+      .button1 {
+        width: 143px;
+        height: 45px;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 8px;
+      }
+
+      .button2 {
+        width: 143px;
+        height: 45px;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    img {
+      top: 30%;
+      right: 20%;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .hero {
+    img {
+      top: 30%;
+      right: 12%;
+    }
+  }
+}

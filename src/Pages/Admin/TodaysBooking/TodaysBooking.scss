@@ -1,0 +1,64 @@
+$purple: #63049b;
+
+.booking {
+  padding: 30px;
+  margin-top: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+
+  input {
+    background-color: $purple;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 6px;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+  }
+
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      li {
+        div {
+          color: white;
+        }
+        button {
+          border: none;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .table {
+    .table-head {
+      tr {
+        th {
+          font-size: 18px;
+          font-family: "DM Sans", sans-serif;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .table-body {
+      tr {
+        td {
+          font-size: 14px;
+          font-family: "DM Sans", sans-serif;
+        }
+      }
+    }
+  }
+}

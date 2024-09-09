@@ -1,0 +1,14 @@
+.theater{
+    margin-right: 450px;
+}
+@media(max-width:1700px){
+    .theater{
+        margin-right: 420px;
+    }
+}
+
+@media(max-width:1100px){
+    .theater{
+        margin-right: 0;
+    }
+}

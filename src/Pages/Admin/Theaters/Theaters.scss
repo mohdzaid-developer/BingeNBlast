@@ -1,0 +1,98 @@
+$purple: #63049b;
+
+.admin-theaters {
+  padding: 30px;
+  margin-top: 10vh;
+  position: relative;
+
+  .red-blob {
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    bottom: 10px;
+    width: 564px;
+    height: 564px;
+    border-radius: 564px;
+    background: linear-gradient(
+      318deg,
+      #6f113e 13.43%,
+      rgba(111, 17, 62, 0) 93.61%
+    );
+    filter: blur(125px);
+  }
+
+  .blue-blob {
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 10px;
+    width: 564px;
+    height: 564px;
+    border-radius: 564px;
+    background: linear-gradient(
+      318deg,
+      #09173d 13.43%,
+      rgba(9, 23, 61, 0) 93.61%
+    );
+    filter: blur(125px);
+  }
+
+  .cards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    .card {
+      padding: 20px;
+      width: 450px;
+      // height: 550px;
+      border-radius: 0px 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15.5px);
+      -webkit-backdrop-filter: blur(15.5px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        white-space: pre-wrap;
+
+        img {
+          width: 100%;
+        }
+        h3 {
+          font-family: Orbitron;
+          color: #fff;
+          font-size: 27px;
+          letter-spacing: 1px;
+        }
+        p {
+          text-align: left;
+          font-size: 15px;
+        }
+      }
+
+      .action {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+          font-family: Orbitron;
+          font-size: 27px;
+        }
+      }
+    }
+  }
+}

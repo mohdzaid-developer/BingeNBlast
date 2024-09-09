@@ -1,0 +1,45 @@
+$purple: #63049b;
+
+.payments {
+  padding: 30px;
+  margin-top: 10vh;
+
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      li {
+        div {
+          color: white;
+        }
+        button {
+          border: none;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .table {
+    .table-head {
+      tr {
+        th {
+          font-size: 18px;
+          font-family: "DM Sans", sans-serif;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .table-body {
+      tr {
+        td {
+          font-size: 14px;
+          font-family: "DM Sans", sans-serif;
+        }
+      }
+    }
+  }
+}

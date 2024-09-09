@@ -1,0 +1,56 @@
+.form-box {
+  padding: 30px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 9999999999999999;
+  transform: translate(-50%, -50%);
+  background: rgba(40, 1, 63, 0.95);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  h2 {
+    font-size: 25px;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+    input{
+        width: 100%;
+        background-color: transparent;
+        color: white;
+        border-bottom: 0.5px solid white;
+        padding:  5px;
+
+    }
+
+    input[type="file"]{
+      border-bottom: none;
+
+    }
+  }
+
+  .buttons {
+    button {
+      padding: 6px 10px;
+      border-radius: 5px;
+      color: white;
+      font-size: 15px;
+      background-color: green;
+      font-size: 15px;
+    }
+  }
+}

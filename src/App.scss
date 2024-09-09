@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,700&family=Orbitron:wght@400;500&display=swap");
+
+// Colors
+$purple: #63049b;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+body {
+  background-color: #000;
+  color: white;
+}
+
+
+
+// Hide Scrollbar
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+}
+button {
+  border: none;
+  outline: none;
+}
+
+input,
+textarea,
+select {
+  border: none;
+  outline: none;
+  font-family: "DM Sans", sans-serif;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: "DM Sans", sans-serif;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.no-data {
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+}
+// font-family: 'Corinthia', cursive;
+// font-family: 'DM Sans', sans-serif;
+// font-family: 'Orbitron', sans-serif;

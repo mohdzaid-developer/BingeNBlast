@@ -1,0 +1,479 @@
+$purple: #63049b;
+
+.celebrations {
+  padding: 100px 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+
+  .red-blob {
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    bottom: 100px;
+    width: 764px;
+    height: 764px;
+    border-radius: 864px;
+    background: linear-gradient(
+      318deg,
+      #6f113e 13.43%,
+      rgba(111, 17, 62, 0) 93.61%
+    );
+    filter: blur(125px);
+  }
+
+  .blue-blob1 {
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 150px;
+    width: 864px;
+    height: 864px;
+    border-radius: 864px;
+    border-radius: 820px;
+    background: linear-gradient(
+      318deg,
+      #09173d 13.43%,
+      rgba(9, 23, 61, 0) 93.61%
+    );
+    filter: blur(125px);
+  }
+
+  .blue-blob2 {
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    top: 10px;
+    width: 864px;
+    height: 864px;
+    border-radius: 864px;
+    border-radius: 820px;
+    background: linear-gradient(
+      318deg,
+      #09173d 13.43%,
+      rgba(9, 23, 61, 0) 93.61%
+    );
+    filter: blur(125px);
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    h2 {
+      text-align: center;
+      font-family: Orbitron;
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+    p {
+      text-align: center;
+      font-family: DM Sans;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 34px;
+
+    .card {
+      padding: 25px;
+      width: 374px;
+      height: 452px;
+      border-radius: 0px 50px;
+      border: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15.5px);
+      -webkit-backdrop-filter: blur(15.5px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        h3 {
+          font-family: Orbitron;
+          font-size: 20px;
+          letter-spacing: 1px;
+        }
+        p {
+          text-align: left;
+          font-size: 14px;
+        }
+      }
+
+      .button {
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 324px;
+          height: 54px;
+          border-radius: 10px;
+          background: $purple;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+        background-color: white;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: $purple;
+      }
+    }
+    .card {
+      margin-bottom: 40px;
+      padding: 25px;
+      width: 90%;
+      height: auto;
+      border-radius: 0px 50px;
+      border: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15.5px);
+      -webkit-backdrop-filter: blur(15.5px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+
+      .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        img {
+          width: 100%;
+        }
+        h3 {
+          font-family: Orbitron;
+          font-size: 19px;
+          letter-spacing: 1px;
+        }
+        p {
+          text-align: center;
+          font-size: 13px;
+        }
+      }
+
+      .button {
+        width: 100%;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding: 8px 0;
+          border-radius: 6px;
+          background: $purple;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1790px) {
+  .celebrations {
+    padding: 80px 200px;
+    gap: 40px;
+
+    .content {
+      gap: 13px;
+
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+
+    .cards {
+      gap: 30px;
+
+      .card {
+        padding: 22px;
+        width: 340px;
+        height: 380px;
+        border-radius: 0px 48px;
+        gap: 18px;
+
+        .content {
+          gap: 8px;
+          img {
+            width: 310px;
+          }
+          h3 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 13px;
+            line-height: 20px;
+          }
+        }
+
+        .button {
+          a {
+            width: 290px;
+            height: 42px;
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1490px) {
+  .celebrations {
+    padding: 80px 200px;
+    gap: 40px;
+
+    .content {
+      gap: 13px;
+
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+
+    .cards {
+      gap: 30px;
+
+      .card {
+        padding: 22px;
+        width: 300px;
+        height: 350px;
+        gap: 16px;
+
+        .content {
+          img {
+            width: 250px;
+          }
+          h3 {
+            font-size: 17px;
+          }
+        }
+
+        .button {
+          a {
+            width: 280px;
+            height: 40px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .celebrations {
+    padding: 60px 100px;
+    gap: 30px;
+
+    .content {
+      gap: 13px;
+
+      h2 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 22px;
+      }
+    }
+
+    .cards {
+      gap: 25px;
+
+      .card {
+        padding: 22px;
+        width: 300px;
+        height: 350px;
+        gap: 15px;
+
+        .content {
+          img {
+            width: 250px;
+          }
+          h3 {
+            font-size: 16px;
+          }
+        }
+        .button {
+          a {
+            width: 260px;
+            height: 36px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .celebrations {
+    padding: 50px 80px;
+    gap: 25px;
+
+    .content {
+      gap: 13px;
+
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+
+    .cards {
+      gap: 23px;
+
+      .card {
+        padding: 20px;
+
+        .content {
+          img {
+            width: 250px;
+          }
+          h3 {
+            font-size: 15px;
+          }
+        }
+        .button {
+          a {
+            width: 240px;
+            height: 34px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .celebrations {
+    padding: 20px 40px;
+    gap: 20px;
+    .red-blob {
+      right: 0px;
+      bottom: 10px;
+      width: 400px;
+      height: 400px;
+      border-radius: 400px;
+    }
+
+    .blue-blob1 {
+      left: 0px;
+      top: 10px;
+      width: 400px;
+      height: 400px;
+      border-radius: 400px;
+    }
+
+    .blue-blob2 {
+      display: none;
+    }
+
+    .content {
+      gap: 12px;
+      h2 {
+        font-size: 23px;
+      }
+      p {
+        font-size: 13px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .celebrations {
+    padding: 10px 20px;
+    .blue-blob1 {
+      display: none;
+    }
+
+    .content {
+      gap: 12px;
+
+      h2 {
+        font-size: 22px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 11px;
+        line-height: 20px;
+      }
+    }
+
+    .carousel {
+      .card {
+        padding: 25px;
+        gap: 18px;
+
+        .content {
+          gap: 8px;
+
+          h3 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 11px;
+          }
+        }
+
+        .button {
+          a {
+            padding: 7px 0;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

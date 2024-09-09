@@ -1,0 +1,404 @@
+$purple: #63049b;
+
+.common-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+    h2 {
+      font-family: "Orbitron", sans-serif;
+      font-size: 32px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    p {
+      font-size: 18px;
+      font-family: "DM Sans", sans-serif;
+      text-align: center;
+      line-height: 30px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .card {
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #14011f;
+    backdrop-filter: blur(62px);
+
+    .container {
+      width: 1200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+
+      .data {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 25px;
+        h3 {
+          font-size: 48px;
+          font-family: "DM Sans", sans-serif;
+          font-weight: 700;
+        }
+        p {
+          font-size: 21px;
+          line-height: 30px;
+        }
+        a {
+          padding: 20px 56px;
+          background-color: $purple;
+          border-radius: 12px;
+          font-size: 18px;
+        }
+      }
+
+      img {
+        height: 400px;
+        width: 650px;
+      }
+    }
+
+    .reverse {
+      flex-direction: row-reverse;
+      background-color: black;
+      gap: 100px;
+    }
+  }
+
+  .reverse {
+    background-color: black;
+
+    .blob {
+      position: absolute;
+      top: 10px;
+      right: 120px;
+      width: 500px;
+      height: 500px;
+      border-radius: 600px;
+      background: linear-gradient(
+        318deg,
+        rgba(149, 69, 252, 0.8) 13.43%,
+        rgba(111, 17, 62, 0) 93.61%
+      );
+      filter: blur(125px);
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .common-section {
+    margin-top: 50px;
+
+    .content {
+      gap: 15px;
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .card {
+      padding: 80px 0;
+
+      .container {
+        width: 1000px;
+        gap: 40px;
+
+        .data {
+          gap: 22px;
+          h3 {
+            font-size: 38px;
+          }
+          p {
+            font-size: 18px;
+            line-height: 26px;
+          }
+          a {
+            padding: 18px 42px;
+            font-size: 16px;
+          }
+        }
+
+        img {
+          height: 320px;
+          width: 500px;
+        }
+      }
+
+      .reverse {
+        gap: 80px;
+      }
+    }
+
+    .reverse {
+      .blob {
+        top: 10px;
+        right: 120px;
+        width: 400px;
+        height: 400px;
+        border-radius: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .common-section {
+    margin-top: 40px;
+
+    .content {
+      gap: 14px;
+      h2 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .card {
+      padding: 60px 0;
+
+      .container {
+        width: 800px;
+        gap: 30px;
+
+        .data {
+          gap: 20px;
+          h3 {
+            font-size: 34px;
+          }
+          p {
+            font-size: 16px;
+            line-height: 24px;
+          }
+          a {
+            padding: 15px 38px;
+            font-size: 14px;
+          }
+        }
+
+        img {
+          height: 250px;
+        }
+      }
+
+      .reverse {
+        gap: 70px;
+      }
+    }
+
+    .reverse {
+      .blob {
+        top: 9px;
+        right: 120px;
+        width: 380px;
+        height: 380px;
+        border-radius: 380px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .common-section {
+    margin-top: 35px;
+
+    .content {
+      gap: 14px;
+      h2 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 13px;
+        line-height: 21px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .card {
+      padding: 50px 0;
+
+      .container {
+        width: 700px;
+        gap: 25px;
+
+        .data {
+          gap: 18px;
+          h3 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 13px;
+            line-height: 22px;
+          }
+          a {
+            padding: 14px 36px;
+            font-size: 13px;
+          }
+        }
+
+        img {
+          height: 220px;
+        }
+      }
+
+      .reverse {
+        gap: 60px;
+      }
+    }
+    .reverse {
+      .blob {
+        top: 9px;
+        right: 50px;
+        width: 250px;
+        height: 250px;
+        border-radius: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .common-section {
+    width: 100%;
+
+    .content {
+      gap: 18px;
+      h2 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 50px;
+      }
+    }
+
+    .card {
+      width: 100%;
+      padding: 100px 70px;
+
+      .container {
+        width: 100%;
+        flex-direction: column-reverse;
+
+        gap: 50px;
+
+        .data {
+          width: 100%;
+          gap: 20px;
+          h3 {
+            font-size: 40px;
+          }
+          p {
+            font-size: 20px;
+            line-height: 30px;
+          }
+          a {
+            width: 100%;
+            padding: 18px 40px;
+            border-radius: 10px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .reverse {
+        flex-direction: column-reverse;
+        gap: 50px;
+      }
+    }
+
+    .reverse {
+      .blob {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .common-section {
+    .content {
+      padding: 0 30px;
+            gap: 18px;
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .card {
+      padding: 50px 30px;
+
+      .container {
+        gap: 25px;
+
+        .data {
+          gap: 18px;
+          h3 {
+            font-size: 28px;
+          }
+          p {
+            font-size: 16px;
+            line-height: 22px;
+          }
+          a {
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .reverse {
+        gap: 40px;
+      }
+    }
+
+    .reverse {
+      .blob {
+        top: 50px;
+        right: 0px;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+      }
+    }
+  }
+}
